@@ -267,94 +267,128 @@ img {
 }
 
 
-/* Service Css Starts  */
+/* Project Css Starts  */
 
 
-.projects{
+.projects {
     background: black;
+    padding: 4em 2em;
 }
-.projects h2{
-    font-size: 4rem;
+
+.projects h2 {
+    font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    color: #ffb5b5;
 }
 
-.projects-container{
+.projects-container {
     display: grid;
-    margin-right: 2.5rem;
-    margin-bottom: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-.project-box{
+.project-box {
     background-color: #ba294d;
-    height: 350px;
     border-radius: 3rem;
     cursor: pointer;
+    height: auto;
+    padding: 2.5rem 2rem;
     transition: 0.3s ease;
-    margin-right: 0;
-    margin-bottom: 2.5rem
-
+    color: white;
 }
 
-.project-box:hover{
-    background: transparent ;
+.project-box:hover {
+    background: transparent;
     color: #ba294d;
     transform: scale(1.03);
     border: 1px solid #ba294d;
 }
 
-.project-box .project-info{
+
+.project-box .project-info {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    max-height: 200px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 5em;
+    padding: 1rem;
+    text-align: center;
 }
 
-.project-info h4{
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+.project-info h4 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
 }
 
-.project-info h5{
-    font-size: 1.8rem;
+.project-info h5 {
+    font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
+    color: #fff3f3;
 }
 
-.project-info p{
-    font-size: 1.5rem;
+.project-info p {
+    font-size: 1.1rem;
     font-weight: 400;
-    max-height: 100px;
-    margin: auto;
+    line-height: 1.6;
+    color: #fff;
 }
 
+/* Media Queries */
 @media (max-width: 991px) {
-   section{
-        padding: 10rem 3% 2rem;
+    section {
+        padding: 6rem 3% 2rem;
     }
-    .projects{
-        padding-bottom: 7rem;
-    
+
+    .projects {
+        padding-bottom: 6rem;
     }
 }
-
 
 @media (max-width: 895px) {
-   .projects h2{
-        margin: 3rem;
+    .projects h2 {
+        margin: 2rem 1rem;
+        font-size: 2.5rem;
     }
-    .projects-container{
-       grid-template-columns: repeat(1,1fr);
+
+    .project-info h4 {
+        font-size: 2rem;
+    }
+
+    .project-info h5 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
     }
 }
 
-/* Service Section css End */
+@media (max-width: 480px) {
+    .projects {
+        padding: 3em 1em;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        padding: 1.5rem;
+    }
+
+    .project-info {
+        padding: 0.5rem;
+    }
+}
+
+
+/* Projects Section css End */
 
 /* Skills Section css Starts */
 
@@ -548,7 +582,7 @@ img {
 /* Education Section css End*/
 
 /* contact Section css starts*/
-.contact{
+/* .contact{
     background-color: black;
 }
 
@@ -588,7 +622,7 @@ img {
 
 .contact  form .btn {
     margin-top:  2rem;
-}
+} */
    
 
 /* contact Section css End*/
@@ -762,6 +796,3 @@ footer .social a:hover{
    }
 
 }
-
-
-
